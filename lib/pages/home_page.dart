@@ -26,6 +26,12 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Estensions WidgetMarginX'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed('widget_padding_x_page');
+              },
+              child: const Text('Estensions WidgetPaddingX'),
+            ),
 
           ],
         ),

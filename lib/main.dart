@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get_ui_utils/context_ext_page/context_ext_page.dart';
 import 'package:get_ui_utils/pages/home_page.dart';
 import 'package:get_ui_utils/widget_margin_x/widget_margin_x_page.dart';
+import 'package:get_ui_utils/widget_padding_x/widget_padding_x_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,6 +33,11 @@ class MyApp extends StatelessWidget {
           name: '/widget_margin_x_page',
           page: () => const WidgetMarginXPage(),
         ),
+        GetPage(
+          name: '/widget_padding_x_page',
+          page: () => const WidgetPaddingXPage(),
+        ),
+
       ],
     );
   }
