@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_ui_utils/context_ext_page/context_ext_page.dart';
 import 'package:get_ui_utils/pages/home_page.dart';
+import 'package:get_ui_utils/widget_margin_x/widget_margin_x_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,8 +20,18 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       getPages: [
-        GetPage(name: '/', page: () => const HomePage(),),
-        GetPage(name: '/context_ext', page: () => const ContextExtPage(),),
+        GetPage(
+          name: '/',
+          page: () => const HomePage(),
+        ),
+        GetPage(
+          name: '/context_ext',
+          page: () => const ContextExtPage(),
+        ),
+        GetPage(
+          name: '/widget_margin_x_page',
+          page: () => const WidgetMarginXPage(),
+        ),
       ],
     );
   }

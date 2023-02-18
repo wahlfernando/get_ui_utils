@@ -18,8 +18,15 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 Get.toNamed('context_ext');
               },
-              child: Text('Context Estensions'),
-            )
+              child: const Text('Context Estensions'),
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed('widget_margin_x_page');
+              },
+              child: const Text('Estensions WidgetMarginX'),
+            ),
+
           ],
         ),
       ),
