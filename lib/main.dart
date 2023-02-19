@@ -4,6 +4,7 @@ import 'package:get_ui_utils/context_ext_page/context_ext_page.dart';
 import 'package:get_ui_utils/pages/home_page.dart';
 import 'package:get_ui_utils/widget_margin_x/widget_margin_x_page.dart';
 import 'package:get_ui_utils/widget_padding_x/widget_padding_x_page.dart';
+import 'package:get_ui_utils/widget_sliverbox_x/widget_sliverbox_x_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,6 +37,10 @@ class MyApp extends StatelessWidget {
         GetPage(
           name: '/widget_padding_x_page',
           page: () => const WidgetPaddingXPage(),
+        ),
+        GetPage(
+          name: '/widget_sliverbox_x_page',
+          page: () => const WidgetSliverboxXPage(),
         ),
 
       ],

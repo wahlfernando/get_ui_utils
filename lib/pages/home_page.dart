@@ -32,6 +32,12 @@ class HomePage extends StatelessWidget {
               },
               child: const Text('Estensions WidgetPaddingX'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed('widget_sliverbox_x_page');
+              },
+              child: const Text('Estensions WidgetSliverBoxX'),
+            ),
 
           ],
         ),
